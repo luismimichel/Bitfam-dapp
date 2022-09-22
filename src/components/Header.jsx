@@ -214,6 +214,7 @@ function Header() {
     return (
         <>
             <header>
+                
                 <nav>
                     <ul>
                         <li>
@@ -224,19 +225,10 @@ function Header() {
                                 title="Infinity Block" />
                         </li>
                         <li>
-                            <Link to="/">Home</Link>
+                            <Link to="/invest">Copy referal link</Link>
                         </li>
                         <li>
-                            <Link to="/invest">Invest</Link>
-                        </li>
-                        <li>
-                            <Link to="/Withdraw">Withdraw</Link>
-                        </li>
-                        <li>
-                            <Link to="/refers">Refers</Link>
-                        </li>
-                        <li>
-                            <Link to="/user">Profile</Link>
+                            <Link to="/Withdraw">Your transactions</Link>
                         </li>
                         <li>
                             { isLogged ?  <button 

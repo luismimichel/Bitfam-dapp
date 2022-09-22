@@ -66,7 +66,6 @@ function Home () {
 
     return (
         <div className="container-page-home">
-            <h1 className="welcome-tag">WELCOME TO YOUR BEST INVEST CHOICE!</h1>
             <div className="banners">
                 <img 
                     className="banner-img"
@@ -74,9 +73,18 @@ function Home () {
                     alt="Infinity Banner" 
                     title="Infinity Banner" />
                 <div className="dashboard">
-                    <div className="refer-link-zone">
+                    <div className="member-link-zone">
                         <div className="header-refer-zone">
-                            <p>Copy refer link to your clipboard: { referLink }</p>
+                            <img 
+                                className="logo"
+                                src='./assets/logo/logooriginal.png'
+                                alt="Bitfam" 
+                                title="Bitfam" 
+                                height="50"
+                                width="60"
+                                borderRadius="10"
+                                />
+                            <p>Buy your membership <b> right now </b> </p>
                         </div>
                         <div className="content-refer-zone">
                             <button onClick={ () => navigator.clipboard.writeText(referLink) }>
@@ -85,12 +93,38 @@ function Home () {
                         </div>
                     </div>
                     <div className="membership-status">
+                        <h3>Block level: { isActive ? 
+                            <ion-icon style={{ color: 'green' }} name="checkmark-circle-outline"></ion-icon>
+                            :
+                            <ion-icon name="close-circle-outline"></ion-icon>
+                        }</h3>
+                    </div>
+
+                    <div className="membership-status">
                         <h3>Your membership is: { isActive ? 
                             <ion-icon style={{ color: 'green' }} name="checkmark-circle-outline"></ion-icon>
                             :
                             <ion-icon name="close-circle-outline"></ion-icon>
                         }</h3>
                     </div>
+
+                    <div className="membership-status">
+                        <h3>My network: { isActive ? 
+                            <ion-icon style={{ color: 'green' }} name="checkmark-circle-outline"></ion-icon>
+                            :
+                            <ion-icon name="close-circle-outline"></ion-icon>
+                        }</h3>
+                    </div>
+                    <a href="https://web.infinityblocks.tech/" className="go-to-landing">
+                        <b>Go to Our Landing</b>
+                    </a>
+                    <a href="https://web.infinityblocks.tech/" className="go-to-landing">
+                        <b>Go to Our Landing</b>
+                    </a>
+                    <a href="https://web.infinityblocks.tech/" className="go-to-landing">
+                        <b>Go to Our Landing</b>
+                    </a>
+
                     <a href="https://web.infinityblocks.tech/" className="go-to-landing">
                         <b>Go to Our Landing</b>
                     </a>
