@@ -1,0 +1,531 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #313131;
+}
+
+ul, li {
+  list-style-type: none;
+  margin: auto;
+  display: flex;
+  height: 100%;
+}
+
+header {
+  flex: 0 0 auto;
+  width: 100%;
+  display: flex;
+  margin: auto;
+  background-color: #f90a76;
+  box-shadow: 0 0 15px #f90a76;
+  color: white;
+  height: 2.5rem;
+}
+
+header > nav {
+  width: 100%;
+  height: 100%;
+}
+
+header > nav > ul > li > a {
+  list-style-type: none;
+  text-decoration: none;
+  font-weight: bolder;
+  color: white;
+  text-align: center;
+  align-self: center;
+}
+
+header > nav > ul > li > a:hover {
+  color: #313131;
+}
+
+.form-user {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  margin: auto;
+  gap: 2rem;
+  width: 20rem;
+  box-shadow: 0 0 15px #f90a76;
+  border-radius: 3.5px;
+  padding: 2rem;
+}
+
+.user-fields {
+  color: white;
+  border: 2.5px solid #f90a76;
+  background: transparent;
+  font-weight: bolder;
+  height: 1.5rem;
+}
+
+article {
+  background: white;
+  padding: 2rem;
+  position: relative;
+  top: 15%;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: auto;
+  height: 100%;
+}
+
+.first-invest-row, 
+.second-invest-row, 
+.invest-calculator {
+  width: 100%;
+  margin: auto;
+}
+
+.invest-table {
+  height: auto;
+  box-sizing: content-box;
+  border-radius: 5px;
+  gap: 1rem;
+  min-width: 70%;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  text-align: center;
+  background: #3949ab;
+  box-shadow: 0 0 15px #3949ab;
+  color: white;
+}
+
+.separators-invest {
+  margin: auto;
+  font-size: 1.5rem;
+}
+
+.user-img {
+  height: 7.5rem;
+  width: 7.5rem;
+  margin: auto;
+}
+
+.invest-card > img {
+  height: 5rem;
+}
+
+.invest-inputs {
+  color: white;
+  border-radius: 3.5px;
+  border: 3.5px solid #f90a76;
+  background: transparent;
+  font-weight: bolder;
+}
+
+.first-invest-row, 
+.second-invest-row {
+  margin: auto;
+  display: flex;
+  text-align: center;
+}
+
+.first-invest-row > p, 
+.second-invest-row > p {
+  font-weight: bolder;
+  margin: 1rem auto 1em auto;
+}
+
+.fields-invest {
+  margin: auto;
+}
+
+.withdraws {
+  display: flex;
+  flex-direction: row;
+  width: 75%;
+  margin: auto;
+  flex-wrap: wrap;
+}
+
+.withdraws > .card {
+  width: 20% !important;
+  margin: auto;
+}
+
+.invest-calculator {
+  gap: 0.5rem;
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  font-weight: bolder;
+  text-align: center;
+}
+
+.allow-buttons {
+  width: auto;
+}
+
+.card {
+  color: white;
+  background: #7b1fa2;
+  padding: 1rem;
+  border-radius: 5px;
+  margin: 1.5rem auto auto auto;
+  display: flex;
+  width: 40%;
+  flex-direction: column;
+  gap: 10px;
+  min-height: 7.5rem;
+  box-shadow: 0 0 15px #7b1fa2;
+}
+
+.fields-invest {
+  display: flex;
+  flex-direction: column;
+}
+
+.card > h3, .card > h5, .card > p {
+  width: 100%;
+  color: white;
+  text-align: right;
+}
+
+.card > p {
+  box-shadow: 0 0 15px #f90a76;
+}
+
+footer {
+  width: 100%;
+  height: 2.2rem;
+  flex: 0 0 auto;
+  background: #f90a76;
+  text-align: center;
+  margin: auto;
+  color: white !important;
+  font-weight: bolder;
+  display: flex;
+}
+
+.cards-buttons, .allow-buttons {
+  color: white;
+  background-image: linear-gradient(to right top, #af10b7, #c900a7, #de0097, #ee0086, #f90a76);
+  font-weight: bolder;
+}
+
+.cards-buttons {
+  min-width: 12rem;
+}
+
+.connect-button {
+  padding: 0.5rem !important;
+  color: #f90a76;
+  background-color: white;
+}
+
+.connect-button:disabled {
+  background: #949494;
+  color: black;
+}
+
+.connect-button, 
+.cards-buttons, 
+.allow-buttons {
+  margin: auto;
+  padding: 1rem;
+  font-weight: bolder !important;
+  width: auto;
+  border: none;
+  border-radius: 5px;
+}
+
+.copy {
+  margin: auto;
+  text-align: center;
+}
+
+[class*="container-page"] {
+  flex: 1 0 auto;
+  min-height: 42.5rem !important;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.container-page-home {
+  flex-direction: column;
+  align-items: center;
+}
+
+.welcome-tag {
+  background: #7b1fa2;
+  background: linear-gradient(to left, #7b1fa2 0%, #B0D2FF 34%, #f90a76 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+  animation-name: inittext;
+  font-weight: bolder;
+  animation-duration: 800ms;
+}
+
+.refers-table > table {
+  background: white;
+  border-radius: 5px;
+  padding: 1rem;
+}
+
+.refers-table, table {
+  margin: auto;
+  box-shadow: 0 0 15px #f90a76;
+}
+
+.refers-table > table > thead > tr > td > p {
+  padding: 0.5rem;
+}
+
+.color-dolar {
+  color: #f90a76;
+  font-weight: bolder;
+}
+
+
+.banners {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-left: 3.5rem;
+}
+
+.banner-img {
+  width: 45%;
+  animation-duration: 1.5s;
+  animation-name: showofhide;
+}
+
+.dashboard {
+  width: 40%;
+  padding: 1rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.refer-link-zone {
+  border: 3.5px solid #de0097;
+  box-shadow: 0 0 15px #f90a76;
+  border-radius: 5px;
+  background: #1c1c1c;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  margin: auto;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  padding: auto 0.5rem auto 0.5rem;
+}
+
+.header-refer-zone, .content-refer-zone {
+  margin: auto;
+  display: flex;
+  overflow-wrap: anywhere;
+}
+
+.header-refer-zone > p {
+  padding: 0.5rem;
+}
+
+.content-refer-zone > button {
+  margin: 1rem;
+}
+
+.membership-status {
+  margin-left: 2rem;
+}
+
+.membership-status > h3 > ion-icon {
+  font-size: 5rem;
+  color: rgb(255, 0, 72);
+}
+
+.membership-status > h3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5rem;
+  color: white;
+  background: #171717;
+  padding: 1.5rem;
+  border-radius: 5px;
+  border: 3.5px solid #f90a76;
+  margin: auto;
+  box-shadow: 0 0 15px #f90a76;
+}
+
+.go-to-landing {
+  margin: 5.5rem auto auto auto;
+  width: 12.5rem;
+  height: 3rem;
+  border-radius: 5px;
+  background-image: linear-gradient(to right top, #af10b7, #c900a7, #de0097, #ee0086, #f90a76);
+  font-weight: bolder;
+  color: white;
+  border: none;
+  text-decoration: none;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.header-withdraw {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+
+.header-withdraw > h3 {
+  margin: auto;
+  padding: 2rem;
+}
+
+.withdraws {
+  padding: 0 0 2rem 0;
+  box-shadow: 0 0 15px #f90a76;
+}
+
+@media only screen and (max-width: 768px) {
+  
+  .banner-img {
+    width: 90%;
+  }
+  
+  .banners {
+    flex-direction: column;
+    align-items: center;
+    margin-left: inherit;
+  }
+  
+  .membership-status {
+    width: 100%;
+    margin-left: inherit;
+  }
+  
+  .dashboard {
+    max-width: 90%;
+    width: auto;
+    gap: 1rem;
+  }
+  
+  .go-to-landing {
+    margin: inherit;
+    width: 100%;
+  }
+  
+  .refer-link-zone {
+    margin-left: inherit;
+    width: 97.5%;
+  }
+  
+  .invest-calculator {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .refers-table {
+    max-width: -webkit-fill-available;
+    overflow-x: scroll;
+  }
+  
+  .bonds-invest {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: space-around;
+    justify-content: space-around;
+  }
+  
+  ul, li {
+    list-style-type: none;
+    margin: auto 1.5rem auto auto;
+    height: 100%;
+    font-size: 12px;
+    flex-wrap: wrap;
+    display: flex;
+  }
+  
+  li:nth-child(7) {
+    width: 100%;
+    display: contents !important;
+  }
+
+  .connect-button {
+    margin: 0.5rem auto;
+    width: 40%;
+  }
+  
+  header {
+    height: fit-content;
+  }
+  
+  ul > li:first-child {
+    width: 100%;
+  }
+  
+  .logo {
+    width: 45px;
+    margin: auto;
+  }
+  
+  .withdraws {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .withdraws > .card {
+    width: fit-content !important;
+  }
+  
+  [class*="container-page-withdraw"] {
+    padding: 0;
+  }
+
+  .form-user {
+    padding: 1rem;
+  }
+
+}
+
+@keyframes inittext {
+  from {
+  
+   text-align: end;
+
+  }
+  
+  to {
+    
+    text-align: center;
+
+  }
+
+}
+
+@keyframes showofhide {
+  from {
+  
+    opacity: 0;
+
+  }
+  
+  to {
+    
+    opacity: 1;
+
+  }
+
+}
